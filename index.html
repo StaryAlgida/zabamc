@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+    <title>ZabaMC</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+
+          <img id="logo" src="./img/zabamc_logo.png" alt="MC.ZABAMC.PL">
+          
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="menu">
+            <li class="nav-el"><a href="#">Discord</a></li>
+            <li class="nav-el"><a href="#">Lista Kar</a></li>
+            <li class="nav-el"><a href="#">Regulamin</a></li>
+            <li class="nav-el"><a href="#">Kontakt</a></li>
+            <li class="nav-el"><a href="#">Sklep</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+    <section class="status">
+      <!-- <h2>Status serwera</h2> -->
+    <div class="info">
+      <div class="info-container">
+        
+        <div class="inf">
+          <img src="./img/icons8-version-64.png">
+          <h3>WERSJA</h3>
+          <p>Survivla 1.19 - 1.19.3</p>
+        </div>
+        
+        <div class="inf">
+          <img src="./img/icons8-globe-100.png">
+          <h3>STATUS</h3>
+          <p> ilosc</p>
+        </div>
+        
+        <div class="inf">
+          <img src="./img/icons8-link-80.png">
+          <h3>ADRES</h3>
+          <button id="copy" onclick="copy()"><img src="./img/icons8-documents-24.png" alt=""> mc.zabamc.pl</button>
+        </div>
+
+      </div>
+      <div class="buy">
+        <a href="">
+          <img src="./img/buy.png" alt=" picture">
+          <p>KUP RANGE</p>
+        </a>  
+      </div>
+    </div> 
+
+    <div class="status-curve">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+    <div class="opis-curve layer1"></div>
+    
+    <section class="opis">
+      <div class="opis-container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam in suscipit vero nobis, officiis atque accusantium modi repellat, fugit maiores eum amet, facere quisquam aliquid est ut doloremque laboriosam explicabo?
+        Tempore earum incidunt quaerat modi minus totam possimus neque recusandae quibusdam vel maxime debitis odio tempora perspiciatis reiciendis consectetur, corporis sit nihil enim magni iusto dolores distinctio vero quo! Quae!</p>
+        <img src="https://a.allegroimg.com/original/110d97/10cbe94c401c8f99562c5f7c5f0a/Obraz-na-plotnie-FOTOOBRAZ-MINECRAFT-80x60" alt="Obrazek">
+      </div>
+
+      <div class="custom-shape-divider-bottom-1676590289">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+    </section>
+    
+    <section class="ekipa">
+      <div class="ekipa-container">
+        <h2>Ekipa</h2>
+        <p>Ludzie, na których nie można polegać...</p>
+        <div class="ekipa-users">
+        
+        </div>
+      </div>
+      
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
