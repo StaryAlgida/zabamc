@@ -1,7 +1,7 @@
 :root{
     --font-color: #433636;
     --bg-color: #A3CEA2;
-    --nav-bg: #8FC28E;
+    --nav-bg: #ffffff52;
     --nav-option-bg: #7CBD56;
     --status: #78c776;
     --opis: #46a344;
@@ -17,11 +17,52 @@
 
 body{
     background-color: var(--bg-color);
+    margin: 0;
 }
 
-.container img{
-    margin: auto;
+/* new */
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
 }
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-10px) scale(2.1);
+}
+
+.foreground{
+    transform: translateZ(-5px) scale(1.51);
+}
+
+.background,
+.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section{
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+
+/* new */
 
 #logo{
     display: block;
@@ -38,7 +79,7 @@ body{
     padding: 20px;
     font-size: 20px;
     margin: auto;
-    background-color: var(--nav-bg);
+    background: var(--nav-bg);
     border-radius: 20px;
     max-width: 400px;
     list-style: none;
@@ -47,25 +88,27 @@ body{
 .menu li{
     text-align: center;
 }
+
 .nav-el a{
     display: block;
-    
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: bold;
 
+    text-decoration: none;
+    font-weight: bold;
     background-color: var(--nav-option-bg);
+    /* background-image: url("img/button_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
     border-radius: 20px;
     
     margin: auto;
     margin-bottom: 10px;
     padding: 5px 10px 5px 10px;
     
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .hamburger{
-    margin-left: 20px;
+    /* margin-left: 20px; */
 
     display: block;
     position: relative;
@@ -313,7 +356,7 @@ section{
         flex-direction: row;
         justify-content: center;
         gap: 15px;
-        max-width: 700px;
+        max-width: 500px;
     }
 
     .menu.is-active{
